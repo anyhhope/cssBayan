@@ -1,0 +1,53 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #003b6f;
+}
+
+.wrapper {
+    min-height: 100vh;
+    padding: 10vh 20vh;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0.4em;
+}
+
+.accordion-item {
+    margin-bottom: 0.5em;
+}
+
+.img-wrapper {
+    display: none;
+}
+
+.accordion-title {
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.accordion-title:hover ~ .img-wrapper {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.accordion-title:hover {
+    height: 250px;
+}
+
+.accordion-title:hover {
+    height: fit-content;
+}
+
+.accordion-input {
+    appearance: none;
+}
+
+.accordion-input:checked ~ .img-wrapper {
+    display: flex;
+    justify-content: center;
+}
