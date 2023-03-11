@@ -42,6 +42,14 @@ body {
     padding: 0.5em;
 }
 
+.head-btn {
+    display: none;
+}
+
+.head-btn-op {
+    display: none;
+}
+
 .accordion-title:hover .img-wrapper {
     display: flex;
     justify-content: center;
@@ -56,3 +64,36 @@ body {
     display: flex;
     justify-content: center;
 }
+
+
+.accordion-input:checked + .accordion-head {
+    background-color: #003b6f;
+}
+
+.accordion-head {
+    transition: .4s ease-in-out;
+}
+
+
+.accordion:hover .head-btn-op {
+    display: inline;
+}
+
+.accordion:hover .accordion-head {
+    background-color: #003b6f;
+}
+
+.accordion-item:hover .head-btn {
+    display: inline;
+}
+
+.accordion-item:hover .head-btn-op {
+    display: none;
+}
+
+.accordion-item:active .accordion-head{
+    background-color: #1261a6;
+}
+
+
+
