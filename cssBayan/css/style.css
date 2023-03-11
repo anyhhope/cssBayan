@@ -7,8 +7,8 @@ body {
 }
 
 .wrapper {
-    min-height: 100vh;
-    padding: 10vh 20vh;
+    min-height: 101vh;
+    padding: 10vh 30vh;
 }
 
 .title {
@@ -29,18 +29,23 @@ body {
     transition: 1s ease-in-out;
 }
 
-.accordion-title:hover ~ .img-wrapper {
+.accordion-head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+    background-color: #1261a6;
+}
+
+.head-title {
+    padding: 0.5em;
+}
+
+.accordion-title:hover .img-wrapper {
     display: flex;
     justify-content: center;
     cursor: pointer;
-}
-
-.accordion-title:hover {
-    height: 250px;
-}
-
-.accordion-title:hover {
-    height: fit-content;
 }
 
 .accordion-input {
