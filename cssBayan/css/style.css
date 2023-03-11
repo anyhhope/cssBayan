@@ -1,7 +1,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.2;
-    font-size: 40px;
+    font-size: 2em;
     color: #ffffff;
     background-color: #003b6f;
 }
@@ -30,7 +30,6 @@ body {
 
 .accordion-title {
     cursor: pointer;
-    transition: 5s all;
 }
 
 .accordion-head {
@@ -105,5 +104,53 @@ body {
     background-color: #1261a6;
 }
 
+@media screen and (max-width: 1338px) {
+    .wrapper {
+        padding: 10vh 10vh;
+    }
+}
 
+@media screen and (max-width: 667px) {
+    body {
+        font-size: 1em;
+    }
+
+    .accordion-img {
+        width: auto;
+        height: auto;
+        max-width: 20em;
+        max-height: 20em;
+    }
+
+    .btn-img {
+        width: auto;
+        height: auto;
+        max-width: 3em;
+        max-height: 3em;
+    }
+}
+
+@media screen and (max-width: 400px) {  
+    body {
+        font-size: 0.8em;
+    }
+
+    .wrapper {
+        padding: 10vh 7vh;
+    }
+
+    .accordion-img {
+        width: auto;
+        height: auto;
+        max-width: 10em;
+        max-height: 10em;
+    }
+
+    .btn-img {
+        width: auto;
+        height: auto;
+        max-width: 2em;
+        max-height: 2em;
+    }
+}
 
