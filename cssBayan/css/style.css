@@ -53,14 +53,6 @@ body {
     display: none;
 }
 
-.accordion-title:hover .img-wrapper {
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    height: fit-content;
-}
 
 .accordion-input {
     appearance: none;
@@ -84,24 +76,37 @@ body {
     transition: .4s ease-in-out;
 }
 
-.accordion:hover .head-btn-op {
-    display: inline;
-}
 
-.accordion:hover .accordion-head {
-    background-color: #003b6f;
-}
+@media (hover: hover) {
+    .accordion:hover .head-btn-op {
+        display: inline;
+    }
+    
+    .accordion:hover .accordion-head {
+        background-color: #003b6f;
+    }
+    
+    .accordion-item:hover .head-btn {
+        display: inline;
+    }
 
-.accordion-item:hover .head-btn {
-    display: inline;
-}
+    .accordion-item:hover .head-btn-op {
+        display: none;
+    }
 
-.accordion-item:hover .head-btn-op {
-    display: none;
-}
+    .accordion-title:hover .img-wrapper {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        height: fit-content;
+    }
 
-.accordion-item:active .accordion-head{
-    background-color: #1261a6;
+    .accordion-item:active .accordion-head{
+        background-color: #1261a6;
+    }
+
 }
 
 @media screen and (max-width: 1338px) {
