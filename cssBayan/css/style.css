@@ -1,0 +1,161 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #003b6f;
+}
+
+.wrapper {
+    min-height: 101vh;
+    padding: 10vh 30vh;
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 0.4em;
+}
+
+.accordion-item {
+    margin-bottom: 0.5em;
+}
+
+.img-wrapper {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 2s linear;
+    height: 0;
+}
+
+
+.accordion-title {
+    cursor: pointer;
+}
+
+.accordion-head {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+    background-color: #1261a6;
+}
+
+.head-title {
+    padding: 0.5em;
+}
+
+.head-btn {
+    display: none;
+}
+
+.head-btn-op {
+    display: none;
+}
+
+
+.accordion-input {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.accordion-input:checked ~ .img-wrapper {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+
+.accordion-input:checked + .accordion-head {
+    background-color: #003b6f;
+}
+
+.accordion-head {
+    transition: .4s ease-in-out;
+}
+
+
+@media (hover: hover) {
+    .accordion:hover .head-btn-op {
+        display: inline;
+    }
+    
+    .accordion:hover .accordion-head {
+        background-color: #003b6f;
+    }
+    
+    .accordion-item:hover .head-btn {
+        display: inline;
+    }
+
+    .accordion-item:hover .head-btn-op {
+        display: none;
+    }
+
+    .accordion-title:hover .img-wrapper {
+        visibility: visible;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        height: fit-content;
+    }
+
+    .accordion-item:active .accordion-head{
+        background-color: #1261a6;
+    }
+
+}
+
+@media screen and (max-width: 1338px) {
+    .wrapper {
+        padding: 10vh 10vh;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    body {
+        font-size: 1em;
+    }
+
+    .accordion-img {
+        width: auto;
+        height: auto;
+        max-width: 20em;
+        max-height: 20em;
+    }
+
+    .btn-img {
+        width: auto;
+        height: auto;
+        max-width: 3em;
+        max-height: 3em;
+    }
+}
+
+@media screen and (max-width: 400px) {  
+    body {
+        font-size: 0.8em;
+    }
+
+    .wrapper {
+        padding: 10vh 7vh;
+    }
+
+    .accordion-img {
+        width: auto;
+        height: auto;
+        max-width: 10em;
+        max-height: 10em;
+    }
+
+    .btn-img {
+        width: auto;
+        height: auto;
+        max-width: 2em;
+        max-height: 2em;
+    }
+}
+
